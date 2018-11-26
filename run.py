@@ -16,7 +16,7 @@ from   config          import display_model
 
 def main():
 
-    obj_list = [ EarthManager, MomentumdashManager ]
+    obj_list = [ EarthManager, MomentumdashManager ,InfinityManager]
 
     if display_model == "random":
         index = random.randint(0, len(obj_list)-1)
