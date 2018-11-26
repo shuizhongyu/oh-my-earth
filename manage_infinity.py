@@ -42,8 +42,8 @@ class InfinityManager():
 
         success = 0
         #ljx
+        print("download...")
         while success == 0:
-            print("test!!!")
             index = random.randint(1000,20000)
             filename = "/home/ljx/Pictures/infinity/"+str(index)+".jpg"
             self.get_bg_picture(index)
@@ -51,6 +51,7 @@ class InfinityManager():
             if r!=0:
                 success=1
                 break
+            print("failed,again...")
             os.system("rm "+filename)
 
         #xjl

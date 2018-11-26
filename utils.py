@@ -51,7 +51,7 @@ def set_background(file_path, picture_option):
             #停止了lightdm的自启动后这里会不能成功执行，
             #发现是因为DISPLAY环境变量的原因，加上之后正常执行
             os.system("export DISPLAY=:0;feh --bg-scale "+file_path)
-        elif(file_path.find("infinity")>=0)
+        elif(file_path.find("infinity")>=0):
             os.system("export DISPLAY=:0;feh --bg-fill "+file_path)
         else:
             #subprocess.call(["feh", "--bg-max", file_path])
