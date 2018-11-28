@@ -31,7 +31,10 @@ class InfinityManager():
         #xjl
 
 
-        urllib.urlretrieve(imgurl,filename)
+        if(os.path.exists(filename)==False):
+            urllib.urlretrieve(imgurl,filename)
+        else:
+            print(filename+" exists")
 
     def run(self):
         ''' main function '''
